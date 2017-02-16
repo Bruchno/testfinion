@@ -1,0 +1,47 @@
+<?php
+function dbconnect() {
+	$db = new PDO("mysql:host=localhost;dbname=usersinformation", "root", "2609");
+	$db->query("SET NAMES 'utf-8'");
+	return $db;
+}
+
+function recording($id_user, $id_record)
+{
+	$dbn = dbconnect();
+		$st = $dbn->prepare("SELECT * FROM users WHERE ID = :iduser");//
+		$st->bindParam(':iduser', $id_user);
+		$st->execute();
+		while ($r = $st->fetch(PDO::FETCH_ASSOC))
+		{
+			$avatar = $r['AVATAR'];
+			$login = $r['USER'];
+		} $dbn = null;
+		$db = dbconnect();//
+		$stmt = $db->prepare("SELECT * FROM records WHERE ID_RECORD = :recordid");
+		$stmt->bindParam(':recordid', $id_record);
+		$stmt->execute();
+		while ($row = $stmt->fetch(PDO::FETCH_ASSOC))
+		{
+			$datarecording = $row['DATA'];
+			$textrecording = $row['TEXT_RECORD'];
+		}
+		echo '<div class = "avatarka"><img src = "'.$avatar.'" style = "width: 12%"><br />
+		<p>'.$login.'</p><span>'.$datarecording.'</span></div>';
+		echo '<div style=" width:100%; height:1px; clear:both;"></div>';
+		echo '<div class = "textindex" ><p>'.$textrecording.'</p></div>';
+		$db = null;
+		$arrayimage = array();
+		$dbh = dbconnect();//
+		$stm = $dbh->prepare("SELECT * FROM images WHERE id_record = :idrecord");
+		$stm->bindParam(':idrecord', $id_record);
+		$stm->execute();
+		echo '<div class = "blokfoto">';
+		while ($rowimg = $stm->fetch(PDO::FETCH_ASSOC))
+		{
+			echo '<img src ="'.$rowimg['imagepath'].'" style = "width: 47%;">';
+		}
+		echo '</div>';
+		$dbh = null;		
+}
+
+?>

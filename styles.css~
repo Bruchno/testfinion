@@ -1,0 +1,237 @@
+﻿.modal_div{
+width: 400px;
+height: 400px;
+border-radius: 10px;
+border: 3px #0f0 solid;
+background: #ccc;
+position: fixed;
+top: 45%;
+left: 50%;
+margin-top: -250px;
+margin-left: -250px;
+display: none;
+opacity: 0;
+z-index: 5;
+padding: 10px 10px;
+}
+.modal_close {
+width: 21px;
+height: 21px;
+position: absolute;
+top: 10px;
+right: 10px;
+color: red;
+cursor: pointer;
+display: block;
+}
+#overlay {
+	z-index: 3;
+	position: fixed;
+	background-color: rgb(152, 207, 113);
+	border-color: rgb(83, 175, 19);
+	opacity: 0.8;
+	-moz-opacity: 0.8;
+	filter: alpha(opacity=80);
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+	display: none;
+ }
+ 
+ body{
+	 width: 1200px;
+	 position: relative;
+	 margin: 7px auto;
+	 background: #00aa85;
+	 border: 1px solid #888;
+	 border-radius: 5px;
+ }
+ html{
+	 background: #0cc;
+ }
+ img {
+	 border: 1px solid green;
+	 margin-right: 15px;
+	 -moz-box-shadow: 2px 2px 2px #888;
+	 -webkit-box-shadow: 2px 2px 2px #888;
+	 box-shadow: 2px 2px 2px #888;
+ }
+ li a, submit, button {
+	 text-decoration: none;
+ }
+ li a:hover, submit:hover, button:hover {
+	 color: #0f0;
+ }
+ .avatarka {
+	 text-align: center;
+	 background: #bbb;
+	 color: #46d;
+	 font-family: helvetika;
+	 font-size: 1em;
+	 padding: 4px; 
+	 border: 1px solid #777;
+	 border-radius: 5px;
+	 margin-left: 35px;
+	 width: 180px;
+	 height: 160px;
+	 position: relative;
+ }
+ .textindex {
+	position: relative;
+	float: left;
+	text-indent: 40px;
+	background: lightgreen;
+	color: blue;
+	border: 1px solid green;
+	padding: 30px 30px 30px 30px;
+	margin: 20px;
+	background: #66cdaa;
+	width: 650px;
+ }
+ submit{
+	 display: inline;
+	 padding: 4px 5px;
+	 border: 1px solid #777;
+	 background: #add;
+	 color: #d04;
+	 margin-right: 8px;
+	 border-radius: 5px;
+	 -moz-box-shadow: 2px 2px 2px;
+	 -webkit-box-shadow: 2px 2px 2px;
+	 box-shadow: 2px 2px 2px;
+ }
+ .menu li, button, submit{
+	 display:inline;
+	 padding: 4px 5px;
+	 border: 1px solid #777;
+	 background: #add;
+	 color: #d04;
+	 top: 110px;
+	 margin-right: 8px;
+	 border-radius: 5px;
+	 -moz-box-shadow: 2px 2px 2px;
+	 -webkit-box-shadow: 2px 2px 2px;
+	 box-shadow: 2px 2px 2px;
+ }
+ .subhead {
+	 font-weight: bold;
+	 color: red;
+	 background: #bbb;
+	 text-align: center;
+ }
+ .hello {
+	 position: relative;
+	 font-weight: bold;
+	 color: red;
+	 background: #bbb;
+	 text-align: center;
+	 float: right;
+	 right: 10%;
+ }
+ .reclama {
+	 float: left;
+	 width: 200px;
+	 position: relative;
+	 padding: 20px 20px 20px 20px;
+	 margin: 20px;
+ }
+ .blokfoto , #blokfoto {
+	 display: block;
+	 position: relative;
+	padding: 10px 10px 10px 10px;
+    
+ }
+ .blog {
+width: 100%;
+border-color: #bdb;
+border: 1px solid #bbb;
+border-radius: 5px;
+text-align: center;
+ }
+ .loginuser {
+  margin:100px;
+  max-width:20%;
+  box-sizing:border-box;
+  padding:40px;
+  border-radius:5px; 
+  background:RGBA(255,200,255,1);
+  -webkit-box-shadow:  0px 0px 15px 0px rgba(0, 0, 0, .45);        
+  box-shadow:  0px 0px 15px 0px rgba(0, 0, 0, .45);
+  float: right;  
+}	
+.formregistration {
+	top: 120px;
+	/*margin: 1%;
+	border-radius: 5px;
+	position: relative;
+	background: #add;
+	
+  max-width:40%;
+  box-sizing:border-box;
+  padding:5px;
+  border-radius:5px; 
+  background:RGBA(255,200,255,1);
+  -webkit-box-shadow:  0px 0px 5px 0px rgba(0, 0, 0, .45);        
+  box-shadow:  0px 0px 5px 0px rgba(0, 0, 0, .45);*/  
+}
+.formnews {
+	margin:20px;
+	width: 700px;
+  box-sizing: border-box;
+  top: 60px;
+  position: relative;
+  padding:20px;
+  border-radius:5px; 
+  background:#ccdfcc;
+  -webkit-box-shadow:  0px 0px 15px 0px rgba(0, 0, 0, .45);        
+  box-shadow:  0px 0px 15px 0px rgba(0, 0, 0, .45);  
+}
+.nextButton {
+    margin: 60px;
+    background: #add;
+    border: none;
+    width: 90%;
+    height: 73px;
+    border-radius: 40px;
+    color: #fff;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-family: 'PT Sans', sans-serif;
+    cursor: pointer;
+
+}
+.nextButton:hover {
+        background: #ffd700;
+    }
+header {
+	background-color: PaleTurquoise;
+	background-image: url('dom.jpeg');
+	background-repeat: no-repeat;
+	padding: 20px;
+	text-align: right;
+	color: #ff4500;
+	top: 0px;
+	font-weight: bold;
+	font-size: 45px;
+	font-style: italic;
+	width: 1180px;
+	height: 57px;
+	position: absolute;
+	padding: 10px;
+}
+#ordermade
+{
+	margin: 60px;
+	padding: 5px;
+	border: 1px solid green;
+	border-radius: 3px;
+	float: left;
+}
+.russ {
+	display: none;
+}
+.ukr {
+	display: blok;
+}
